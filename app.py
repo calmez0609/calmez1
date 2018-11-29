@@ -30,12 +30,12 @@ def callback():
     return 'OK'
 
 def function(text):
-    if(text.find('畜生')!=-1)
+    if(text=='畜生')
     return TextSendMessage(text='你才是畜生')
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text=function(event.message.text))
+    message = Reply(text=event.message.text)
     line_bot_api.reply_message(event.reply_token, message)
 
 import os
