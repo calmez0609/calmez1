@@ -35,7 +35,7 @@ def function(text):
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = Reply(text=event.message.text)
+    message = Reply(event.message.text)
     line_bot_api.reply_message(event.reply_token, message)
 
 import os
