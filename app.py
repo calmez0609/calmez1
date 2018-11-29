@@ -29,10 +29,13 @@ def callback():
         abort(400)
     return 'OK'
 
-# 處理訊息
+def function(text):
+    if(text.find("畜生")!=-1)
+    text='你才是畜生'
+
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text=event.message.text)
+    message = TextSendMessage(text=function(event.message.text))
     line_bot_api.reply_message(event.reply_token, message)
 
 import os
