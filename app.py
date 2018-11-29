@@ -31,7 +31,7 @@ def callback():
 
 def Reply(text):
     list=['畜生','王八蛋','龜孫']
-    if text='隆基是'
+    if text='隆基是':
      text=random.choice(list)
         return text
     
