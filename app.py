@@ -31,11 +31,11 @@ def callback():
 
 def function(text):
     list=['畜生','王八蛋','龜孫']
-    if text=='隆基是':
+    if text=='隆基是' :
         text=random.choice(list)
-    else text=='4'
-        text='s'
-        return text
+    else text=='4' :
+         text='s'
+    return text
     
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
