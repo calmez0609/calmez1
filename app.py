@@ -30,8 +30,8 @@ def callback():
     return 'OK'
 
 def function(text):
-    if(text=='畜生')
-    return TextSendMessage(text='你才是畜生')
+    if(text=="畜生")
+    return TextSendMessage(text="你才是畜生")
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
