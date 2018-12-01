@@ -30,8 +30,8 @@ def callback():
     return 'OK'
 
 def function(text):
-    list=['畜生','王八蛋','龜孫']
-    if text=='隆基是':
+    list=['公館','師大']
+    if text=='去哪':
         text=random.choice(list)
     return text
     
